@@ -1,0 +1,114 @@
+﻿<Window x:Class="_2_paras.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2_paras"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid HorizontalAlignment="Left" Width="800" Height="434" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="_1" HorizontalAlignment="Left" Margin="152,63,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1"/>
+        <Button x:Name="_2" HorizontalAlignment="Left" Margin="226,63,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_3" HorizontalAlignment="Left" Margin="302,63,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_4" HorizontalAlignment="Left" Margin="152,138,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_5" HorizontalAlignment="Left" Margin="226,138,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_6" HorizontalAlignment="Left" Margin="302,138,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_7" HorizontalAlignment="Left" Margin="152,213,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_8" HorizontalAlignment="Left" Margin="226,213,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_9" HorizontalAlignment="Left" Margin="302,213,0,0" VerticalAlignment="Top" Height="70" Width="70" Click="SuperClick" Background="#FFA0B5EA" Grid.Column="1">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button Content="Restart Game" HorizontalAlignment="Left" Margin="220,298,0,0" VerticalAlignment="Top" Height="30" Width="80" Click="NewPlay" FontWeight="Bold" FontFamily="Harrington" Grid.Column="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD67CE9"/>
+                    <GradientStop Color="#FFDDDFF2" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="playerWins" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="28,98,0,0" Height="20" VerticalAlignment="Top"  Width="100" FontFamily="Harrington" Text="Player Wins" Grid.Column="1">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF6F4F4"/>
+                    <GradientStop Color="#FFD87373" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock x:Name="TextInfo" TextWrapping="Wrap" Text="    Tic Tac Toe    " Grid.Column="1" Margin="220,44,0,0" VerticalAlignment="Top" Foreground="#FF152020" FontFamily="Harrington" HorizontalAlignment="Left" Width="83" Height="14">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF41BBC8" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF90E2E2" Offset="1"/>
+                    <GradientStop Color="#FFB3D2D2" Offset="0.585"/>
+                </LinearGradientBrush>
+            </TextBlock.OpacityMask>
+        </TextBlock>
+    </Grid>
+</Window>
